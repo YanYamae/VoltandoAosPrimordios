@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+
+    <style>
+        body{
+            background-color: rgba(58, 58, 158, 0.8);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+        }
+        .cabeçalho{
+            width: auto;
+            height: auto;
+            margin: auto;
+            padding: 35px;
+        }
+        h1{
+            text-align: center;
+            height: auto;
+            margin: auto;
+            color: whitesmoke;
+            font-size: 48px;
+        }
+        h3{
+            text-align: center;
+            height: auto;
+            margin: auto;
+            color: whitesmoke;
+        }
+        .prancheta{
+            background-color: rgba(27, 27, 50, 0.8);
+            width: 60%;
+            height: auto;
+            margin: auto;
+            border-radius: 4px;
+            padding: 35px;
+        }
+        label{
+            color: whitesmoke;
+        }
+        input[type=text]{
+            width: -webkit-fill-available;
+            height: auto;
+            padding: 10px;
+            margin-top: 9px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        input[type=number]{
+            width: -webkit-fill-available;
+            height: auto;
+            padding: 10px;
+            margin-top: 9px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        select{
+            width: -webkit-fill-available;
+            height: auto;
+            padding: 10px;
+            margin-top: 9px;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        input[type=radio]{
+            width: 18px;
+            height: 18px;
+            margin-top: 9px;
+        }
+        span{
+            position: relative;
+            left: -17px;
+            bottom: -16px;
+            color: whitesmoke;
+        }
+        #minusculo{
+            font-size: 10px;
+        }
+        #obrigatorio{
+            color: red;
+        }
+        input[type=checkbox]{
+            width: 15px;
+            height: 15px;
+            margin-top: 9px;
+        }
+        #textcheckbox{
+            position: relative;
+            top: -3px;
+            left: 4px;
+        }
+        textarea{
+            width: -webkit-fill-available;
+            height: 120px;
+            margin-top: 9px;
+            padding: 10px;
+            font-size: 13px;
+            font-family: inherit;
+        }
+        button{
+            width: -webkit-fill-available;
+            height: 40px;
+            border-radius: 4px;
+            background-color: #37af65;
+            color: whitesmoke;
+            font-family: inherit;
+            font-size: x-large;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cabeçalho">
+    <header>
+        <h1>Obrigado por participar!</h1>
+        <h3>Sua opnião é muito importante para nós</h3>
+    </header>
+    </div>
+
+
+    <div class="prancheta">
+
+        <!--Entradas de tesxto INPUTTEXT -->
+    <label id="" for="">Nome<label id="obrigatorio"> *</label></label> <br>
+    <input type="text" placeholder="Escreva seu nome" name="nome"><br><br>
+
+    <label id="" for="">Sobrenome<label id="obrigatorio"> *</label></label><br>
+    <input type="text" placeholder="Escreva seu sobrenome" name="sobrenome"><br><br>
+
+    <label id="" for="">Idade<label id="obrigatorio"> *</label></label><br>
+    <input type="number" placeholder="Escreva sue idade" name="idade"><br><br>
+
+        <!--Seleção de ocupação SELECT-->
+    <label id="" for="">Ocupação<label id="obrigatorio"> *</label></label><br>
+    <select id="ocupacao">
+        <option disabled selected value>Selecione uma opção</option>
+        <option value="estudante">Estudante</option>
+        <option value="empregado">Empregado</option>
+        <option value="desocupado">Desocupado</option>
+        <option value="na">Prefiro não dizer</option>
+    </select><br><br>
+    
+        <!--Avaliação de recomendação RADIOBUTTON-->
+    <label id="" for="avaliacao1 avaliacao2 avaliacao3 avaliacao4 avaliacao5">Quão você recomendaria nossos serviços? <label id="minusculo">(Sendo 5 a melhor nota)</label></label><br> 
+    <!--fazer o CSS contornando os radiobuttons e criando uma linha, como se fosse um termometro antigo de mercurio-->
+    <input type="radio" id="avaliacao1" name="avaliacao"><span>1</span>
+    <input type="radio" id="avaliacao2" name="avaliacao"><span>2</span>
+    <input type="radio" id="avaliacao3" name="avaliacao"><span>3</span>
+    <input type="radio" id="avaliacao4" name="avaliacao"><span>4</span>
+    <input type="radio" id="avaliacao5" name="avaliacao"><span>5</span><br><br><br>
+
+        <!--Seleção de segmento CHECKBOX-->
+    <label>Em qual dos seguimentos você se inscreveu?<label id="obrigatorio"> *</label></label><br>
+    <input type="checkbox" name="analista"><label id="textcheckbox">Analista</label><br>
+    <input type="checkbox" name="programador"><label id="textcheckbox">Programador</label><br>
+    <input type="checkbox" name="tester"><label id="textcheckbox">Tester</label><br>
+    <input type="checkbox" name="designer"><label id="textcheckbox">Designer</label><br><br>
+             
+        <!--Opnião escrita TEXTAREA-->
+    <label>Descreva como foi sua experiencia:</label><br>
+    <textarea name="opniao" placeholder="Fique a vontade..."></textarea><br><br><br>
+
+        <!--Botão enviar BUTTON-->
+    <button name="enviar">Enviar</button>
+
+    </div><br>
+    <script>
+        
+    </script>
+</bory>
+</html>
